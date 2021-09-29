@@ -1,0 +1,25 @@
+model:
+    arch: DMMN
+data:
+    dataset: tissue_seg
+    train_split: train_aug
+    val_split: val
+    img_rows: 'same'
+    img_cols: 'same'
+    path: 
+training:
+    train_iters: 2316880
+    batch_size: 1
+    val_interval: 115844
+    n_workers: 16
+    print_interval: 115844
+    optimizer:
+        name: 'sgd'
+        lr: 5.0e-5
+        weight_decay: 0.0001
+        momentum: 0.99
+    loss:
+        name: 'cross_entropy'
+        size_average: True
+    lr_schedule:
+    resume: 
