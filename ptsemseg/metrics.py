@@ -33,7 +33,8 @@ class runningScore(object):
         acc = np.diag(hist).sum() / hist.sum()
         acc_cls = np.diag(hist) / hist.sum(axis=1)
         acc_cls = np.nanmean(acc_cls)
-        iu = 2*np.diag(hist) / (hist.sum(axis=1) + hist.sum(axis=0)) # dice coefficient
+        iu = np.diag(hist) / (hist.sum(axis=1) + hist.sum(axis=0) - np.diag(hist))
+        # iu = 2*np.diag(hist) / (hist.sum(axis=1) + hist.sum(axis=0)) # dice coefficient
         mean_iu = np.nanmean(iu)
         freq = hist.sum(axis=1) / hist.sum()
         fwavacc = (freq[freq > 0] * iu[freq > 0]).sum()
