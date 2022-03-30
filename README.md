@@ -44,6 +44,10 @@ Please download **the pretrained breast model** [here](https://mskcc.box.com/s/q
 
 Note that segmentation predictions will be generated in 4-bit BMP format. The size limit for 4-bit BMP files is 2<sup>32</sup> pixels.
 
+## Other pretrained segmentation models
+Please find other pretrained segmentation models using Deep Multi-Magnification Network:
+* **Ovarian model** [here](https://github.com/MSKCC-Computational-Pathology/DMMN-ovary).
+
 ## License
 This project is under the CC-BY-NC 4.0 license. See [LICENSE](LICENSE.md) for details. (c) MSK
 
