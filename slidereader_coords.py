@@ -8,7 +8,6 @@ import extract_tissue
 import shutil
 import math
 import glob
-from slidereader_interface import SlideReaderCoords
 
 if __name__ == '__main__':
     
