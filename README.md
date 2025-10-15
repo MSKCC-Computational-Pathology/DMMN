@@ -48,6 +48,7 @@ Note that segmentation predictions will be generated in 4-bit BMP format. The si
 Please find other pretrained segmentation models using Deep Multi-Magnification Network:
 * **Ovarian model** [here](https://github.com/MSKCC-Computational-Pathology/DMMN-ovary).
 * **Osteosarcoma model** [here](https://github.com/MSKCC-Computational-Pathology/DMMN-osteosarcoma).
+* **Lung model** [here](https://github.com/davidholab/DMMN-lung).
 
 ## License
 This project is under the CC-BY-NC 4.0 license. See [LICENSE](LICENSE.md) for details. (c) MSK
@@ -67,3 +68,4 @@ If you find our work useful, please cite our [paper](https://doi.org/10.1016/j.c
   pages={101866}
 }
 ```
+
